@@ -240,6 +240,7 @@ function keyPressed(){
 		}
 	}else if(keyCode === 73){
 		automated = (automated) ? false : true;
+		paddle.move(((automated) ? ball.x : mouseX));
 	}
 	return false;
 }
